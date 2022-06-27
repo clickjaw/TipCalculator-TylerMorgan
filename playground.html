@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "playground.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+</head>
+<body>
+    TIP CALCULATOR
+        <form action = "app.js" method = "post" id="calculator">
+
+    <div id = "calculator-body">
+        <!-- <form action = "app.js" method = "post" id="calculator"> -->
+        <div id = "calculator-form">
+            <div id = "bill-amount">
+            <label for = "billAmount">Bill Amount</label>
+            <input type = "text" name = "billAmount" id = "billAmount">
+            </div>
+
+            <div id = "choose-tip-amount">
+            <label for = "chooseAmount">Choose Tip Amount</label>
+            <select name="tipMenu" id="tipMenu">
+                <option value="fivePercent">5%</option>
+                <option value="tenPercent">10%</option>
+                <option value="fifteenPercent">15%</option>
+                <option value="twentyPercent">20%</option>
+                <option value="fiftyPercent">50%</option>
+              </select>
+             </div>
+
+            <div id = "number-of-customers">
+            <label for = "numberCustomers">Number of Customers</label>
+            <input type = "text" name = "numberCustomers" id = "numberCustomers">
+            </div>
+
+            <div id = "submit-button">
+            <input type="submit" value = "submit" id = "submit">	
+            </div>
+
+        </div>
+        
+        <div id = "calculator-display">
+            <div id = "tip-amount">
+                Tip Amount
+            </div>
+            <div id = "total-amount">
+                Total Amount
+            </div>
+        </div>
+        
+    <!-- </form> -->
+    </div>
+    </form>
+</body>
+<script src = "app.js"></script>
+</html>
