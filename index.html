@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "playground.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tip Calculator</title>
+    <title>Playground</title>
 </head>
 <body>
     TIP CALCULATOR
+        <form action = "app.js" method = "post" id="calculator">
 
     <div id = "calculator-body">
-        <form action = "app.js" method = "post" id="calculator">
+        <!-- <form action = "app.js" method = "post" id="calculator"> -->
         <div id = "calculator-form">
             <div id = "bill-amount">
             <label for = "billAmount">Bill Amount</label>
             <input type = "text" name = "billAmount" id = "billAmount">
             </div>
+
             <div id = "choose-tip-amount">
             <label for = "chooseAmount">Choose Tip Amount</label>
             <select name="tipMenu" id="tipMenu">
@@ -27,27 +29,30 @@
                 <option value="fiftyPercent">50%</option>
               </select>
              </div>
+
             <div id = "number-of-customers">
             <label for = "numberCustomers">Number of Customers</label>
             <input type = "text" name = "numberCustomers" id = "numberCustomers">
             </div>
-            <div id = "submit-button">
-            <input type="submit" value = "submit" id = "submit">	
+
+            <button id = "submit-button">Submit</button>
+            	
             </div>
+
         </div>
         
         <div id = "calculator-display">
             <div id = "tip-amount">
-                Tip Amount
+                Tip Amount:<br><br><span id = "tip-amount-number">0</span>
             </div>
             <div id = "total-amount">
-                Total Amount
+                Total Amount:<br><br><span id = "total-amount-number">0</span>
             </div>
         </div>
         
-        </form>
+    <!-- </form> -->
     </div>
-    
+    </form>
 </body>
 <script src = "app.js"></script>
 </html>
