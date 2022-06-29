@@ -23,6 +23,16 @@ document.querySelector('.submit').addEventListener('click', function(){
 
 })
 
+let resetButton = document.getElementById('reset');
+document.querySelector('.reset').addEventListener('click', function(){
+    document.querySelector('#numberCustomers').value = '';
+    document.querySelector('#tipMenu').value = '';
+    document.querySelector('#billAmount').value = '';
+    document.querySelector('#tip-amount-number').textContent = '$0.00';
+    document.querySelector('#total-amount-number').textContent = '$0.00';
+
+})
+
 
 //percentage = tipAmount /100
 
