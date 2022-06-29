@@ -5,28 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <title>Playground</title>
 </head>
 <body>
-    TIP CALCULATOR
-        <form action = "app.js" method = "post" id="calculator">
+        <form>
 
     <div id = "calculator-body">
         <!-- <form action = "app.js" method = "post" id="calculator"> -->
         <div id = "calculator-form">
             <div id = "bill-amount">
             <label for = "billAmount">Bill Amount</label>
-            <input type = "text" name = "billAmount" id = "billAmount">
+            <input type = "text" name = "billAmount" id = "billAmount" >
             </div>
 
             <div id = "choose-tip-amount">
-            <label for = "chooseAmount">Choose Tip Amount</label>
+            <label for = "chooseAmount">Choose Tip Amount</label>&nbsp; 
             <select name="tipMenu" id="tipMenu">
-                <option value="fivePercent">5%</option>
-                <option value="tenPercent">10%</option>
-                <option value="fifteenPercent">15%</option>
-                <option value="twentyPercent">20%</option>
-                <option value="fiftyPercent">50%</option>
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+                <option value="50">50%</option>
               </select>
              </div>
 
@@ -35,20 +35,21 @@
             <input type = "text" name = "numberCustomers" id = "numberCustomers">
             </div>
 
-            <button id = "submit-button">Submit</button>
+            <button class = "button submit" form = calculator value = submit>Submit</button>
             	
             </div>
 
-        </div>
+        <!-- </div> -->
         
         <div id = "calculator-display">
             <div id = "tip-amount">
-                Tip Amount:<br><br><span id = "tip-amount-number">0</span>
+                Tip Amount:<br><span id = "tip-amount-number">$0.00</span>
             </div>
             <div id = "total-amount">
-                Total Amount:<br><br><span id = "total-amount-number">0</span>
+                Total Amount Per Customer:<br><span id = "total-amount-number">$0.00</span>
             </div>
         </div>
+        
         
     <!-- </form> -->
     </div>

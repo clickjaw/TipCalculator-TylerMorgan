@@ -1,11 +1,15 @@
 body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/308/996/original/dollar-seamless-pattern-money-dollar-pattern-for-fabric-baby-clothes-background-textile-wrapping-paper-and-other-decoration-illustration-free-vector.jpg");
+    background-size: stretch;
     background-color: rgb(151, 187, 149);
-    display: grid;
+    font-family: 'Bangers', cursive;
+    display: flex;
     justify-content: center;
     color: white;
     text-align: center;
     font-size: 48px;
 }
+
 
 #calculator-body {
     margin-top: 20vh;
@@ -13,80 +17,88 @@ body {
     height: 300px;
     background-color: white;
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-content: space-between;
+    display: flex;
+    justify-content: left;
 }
 
 #calculator-form {
     background-color: white;
-    grid-row-start:1;
-    grid-row-end:1;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
     border-radius: 10px;
     width: 300px;
     height: 300px;
     line-height: 100%;
-    display:grid;
 }
 
 #bill-amount {
     text-align: left;
     color: black;
-    font-size: 20px;
+    font-size: 24px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+#bill-amount input{
+    height: 40px;
+    font-size: 30px;
+    width:214px;
+    font-family: inherit;
 }
 
 #choose-tip-amount {
     text-align: left;
     color: black;
-    font-size: 20px;
+    font-size: 24px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+#tipMenu{
+    font-family: inherit;
+    text-align: center;
+    height: 36px;
+    font-size:25px;
 }
 
 #number-of-customers {
     text-align: left;
     color: black;
-    font-size: 20px;
+    font-size: 24px;
     margin-left: 10px;
     margin-right: 10px;
 
 }
 
-#submit-button {
-    width: 240px;
-    background-color: rgb(24, 83, 24);
-    color: white;
-    border-radius: 10px;
-    text-decoration: none;
-    justify-content: center;
-    margin-left: 28px;
-    margin-bottom:10px;
-    margin-top: 8vh;
+#number-of-customers input{
+    height: 40px;
+    font-family: inherit;
+    font-size: 30px;
+    width: 214px;
 }
 
-#submit {
-    background-color: rgb(24, 83, 24);
-    margin-bottom: 2vh;
+
+
+.submit {
+    background-color: white;
+    margin-bottom: 0vh;
     border: none;
-    color: white;
-    font-size: 24px;
+    border-radius: 10px;
+    color: rgb(24, 83, 24);
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 40px;
+    width:320px;
+    height: 100px;
 }
 
 
 #calculator-display {
     background-color: rgb(24, 83, 24);
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 2;
-    grid-column-end:2;
-    display: grid;
+    
     border-radius: 10px;
-    justify-content: left;
+    justify-content: center;
     /* width: 50%; */
     margin-left: 10px;
     margin-top: 10px;
@@ -99,11 +111,13 @@ body {
     background-color: rgb(24, 83, 24);
     border-radius: 10px;
     color: white;
-    font-size: 20px;
-    margin-left: 0px;
+    font-size: 34px;
     padding: 0px;
     margin-top: 4vh;
-    line-height: 100%;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 2px;
+    
 
 
 }
@@ -111,10 +125,19 @@ body {
 #total-amount {
     background-color: rgb(24, 83, 24);
     color: white;
-    font-size: 20px;
+    font-size: 34px;
     border-radius: 10px;
-    margin-left: 20px;
     padding: 0px;
+    margin-top: 4vh;
+    line-height: 120%
+    letter-spacing: 2px;
 
-
+}
+#tip-amount-number{
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+#total-amount-number{
+    font-size: 40px;
+    letter-spacing: 3px;
 }
